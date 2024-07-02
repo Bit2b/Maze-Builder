@@ -18,23 +18,26 @@ const Grid = () => {
   return (
     <div className="pl-56 flex flex-col w-full">
       <StatusBar />
-      <div ref={localGridRef} className="p-4 bg-gray-700">
+      <div ref={localGridRef}>
         {isRandomize ? (
-          <div>
-            {grid.map((row) =>
-              row.map((node) => (
-                <Node
-                  key={`${node.row}-${node.col}`}
-                  row={node.row}
-                  col={node.col}
-                  walls={node.walls}
-                  paths={node.paths}
-                />
-              ))
-            )}
+          <div className="p-4 bg-gray-700">
+            <div>
+              {grid.map((row) =>
+                row.map((node) => (
+                  <Node
+                    key={`${node.row}-${node.col}`}
+                    row={node.row}
+                    col={node.col}
+                    walls={node.walls}
+                    paths={node.paths}
+                  />
+                ))
+              )}
+            </div>
           </div>
-        ) : <Tutorial/>
-        }
+        ) : (
+          <Tutorial />
+        )}
       </div>
     </div>
   );
