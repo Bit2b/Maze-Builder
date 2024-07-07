@@ -22,36 +22,32 @@ export const TopToBottom = () => {
 
 export const RightToBottom = () => {
   return (
-    <svg width={cellSize} height={cellSize} viewBox={`0 0 ${cellSize} ${cellSize}`} fill="none">
-      <rect x={pathCenter} y={pathCenter} width={pathWidth} height={pathLength} fill={color} />
-      <rect x={pathCenter} y={pathCenter} width={pathLength} height={pathWidth} fill={color} />
+    <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
+      <path d="M200 400C200 250 250 200 400 200" stroke={color} stroke-width="25"/>
     </svg>
   );
 };
 
 export const LeftToBottom = () => {
   return (
-    <svg width={cellSize} height={cellSize} viewBox={`0 0 ${cellSize} ${cellSize}`} fill="none">
-      <rect x={pathCenter} y={pathCenter} width={pathWidth} height={pathLength} fill={color} />
-      <rect y={pathCenter} width={pathLength} height={pathWidth} fill={color} />
+    <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
+      <path d="M0 200C150 200 200 250 200 400" stroke={color} stroke-width="25"/>
     </svg>
   );
 };
 
 export const TopToLeft = () => {
   return (
-    <svg width={cellSize} height={cellSize} viewBox={`0 0 ${cellSize} ${cellSize}`} fill="none">
-      <rect x={pathCenter} width={pathWidth} height={pathLength} fill={color} />
-      <rect y={pathCenter} width={pathLength} height={pathWidth} fill={color} />
+    <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
+      <path d="M200 0C200 150 150 200 0 200" stroke={color} stroke-width="25"/>
     </svg>
   );
 };
 
 export const TopToRight = () => {
-  return (
-    <svg width={cellSize} height={cellSize} viewBox={`0 0 ${cellSize} ${cellSize}`} fill="none">
-      <rect x={pathCenter} width={pathWidth} height={pathLength} fill={color} />
-      <rect x={pathCenter} y={pathCenter} width={pathLength} height={pathWidth} fill={color} />
+  return (    
+    <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
+      <path d="M400 200C250 200 200 150 200 0" stroke={color} stroke-width="25"/>
     </svg>
   );
 };
