@@ -23,7 +23,7 @@ export const TopToBottom = () => {
 export const RightToBottom = () => {
   return (
     <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
-      <path d="M200 400C200 250 250 200 400 200" stroke={color} stroke-width="25"/>
+      <path d="M200 400C200 250 250 200 400 200" stroke={color} strokeWidth="25"/>
     </svg>
   );
 };
@@ -31,7 +31,7 @@ export const RightToBottom = () => {
 export const LeftToBottom = () => {
   return (
     <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
-      <path d="M0 200C150 200 200 250 200 400" stroke={color} stroke-width="25"/>
+      <path d="M0 200C150 200 200 250 200 400" stroke={color} strokeWidth="25"/>
     </svg>
   );
 };
@@ -39,7 +39,7 @@ export const LeftToBottom = () => {
 export const TopToLeft = () => {
   return (
     <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
-      <path d="M200 0C200 150 150 200 0 200" stroke={color} stroke-width="25"/>
+      <path d="M200 0C200 150 150 200 0 200" stroke={color} strokeWidth="25"/>
     </svg>
   );
 };
@@ -47,7 +47,7 @@ export const TopToLeft = () => {
 export const TopToRight = () => {
   return (    
     <svg width="24" height="24" viewBox="0 0 400 400" fill="none">
-      <path d="M400 200C250 200 200 150 200 0" stroke={color} stroke-width="25"/>
+      <path d="M400 200C250 200 200 150 200 0" stroke={color} strokeWidth="25"/>
     </svg>
   );
 };

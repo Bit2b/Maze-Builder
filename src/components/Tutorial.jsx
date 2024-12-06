@@ -6,7 +6,7 @@ export function Tutorial() {
         <div>
           <img src="./maze-tutorial.png" alt="tutorial image" />
           <p className="text-xl font-thin font-mono">
-            A maze genereated by Randomized Kruskal's Algorithm
+           A maze genereated by Randomized Kruskal's Algorithm`
           </p>
         </div>
         <div>
